@@ -12,12 +12,10 @@
  */
 
 .fl-node-<?php echo $id; ?> {
-	<?php if ( ! empty( $settings->text_field ) ) : ?>
+    <?php if ( ! empty( $settings->text_field ) ) : ?>
     font-size: <?php echo $settings->text_field; ?>px;
     <?php endif; ?>
     <?php if ( ! empty( $settings->color_field ) ) : ?>
     color: <?php echo FLBuilderColor::hex_or_rgb( $settings->color_field ); ?>;
     <?php endif; ?>
 }
-
-<?php $module->example_method(); ?>
