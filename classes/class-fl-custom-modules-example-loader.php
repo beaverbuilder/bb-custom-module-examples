@@ -28,7 +28,7 @@ class FL_Custom_Modules_Example_Loader {
 		add_filter( 'fl_builder_custom_fields', __CLASS__ . '::register_fields' );
 		
 		// Enqueue custom field assets.
-		add_action( 'init', __CLASS__ . '::enqueue_field_assets' );
+		add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_field_assets' );
 	}
 	
 	/**
