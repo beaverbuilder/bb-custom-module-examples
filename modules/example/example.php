@@ -244,10 +244,11 @@ FLBuilder::register_module('FLExampleModule', array(
             )
         )
     ),
-    'include'       => array( // Tab
-        'title'         => __('Include', 'fl-builder'), // Tab title
-        'file'          => FL_MODULE_EXAMPLES_DIR . 'example/includes/settings-example.php'
-    )
+
+    'include' => array(
+		'title' => __( 'Include', 'fl-builder' ),
+		'file' =>  FL_MODULE_EXAMPLES_DIR . 'modules/example/includes/settings-example.php',
+	),
 ));
 
 /**
